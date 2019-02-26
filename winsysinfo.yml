@@ -1,0 +1,10 @@
+---
+- name: Collect only facts returned by facter
+  hosts: 172.31.46.107
+  gather_facts: true
+  tasks:
+      - setup:
+        register: ansible_facts
+      - debug: var=vars
+
+
