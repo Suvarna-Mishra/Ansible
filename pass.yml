@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks: 
+     - name: "change password"
+       user: name=newuser password="mypass"
